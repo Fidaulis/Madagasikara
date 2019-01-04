@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseHref: '/',
+  wsBasePath: './assets/api',
+  base_url_api: 'http://127.0.0.1:8000'
 };
 
 /*
