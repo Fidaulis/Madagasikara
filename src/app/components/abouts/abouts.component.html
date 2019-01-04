@@ -33,9 +33,9 @@
               <div class="modal-footer justify-content-center flex-column flex-md-row">
                 <span class="mr-4">Spread the word!</span>
                 <h4 class="font-weight-bold">Le parc de Ranomafana :</h4>
-                <p class="mb-0">Le parc national de Ranomafana est un parc malgache situé dans la province de Fianarantsoa.
-          Il a été créé en 19911. Il a été inclus en 2007 dans le site du patrimoine mondial des
-          forêts humides de l’Atsinanana....</p>
+                <p class="mb-0">{{parc_ranomafana.modal_desc}}</p>
+              Géographiquement
+
                 <button type="button" mdbBtn color="primary" outline="true" rounded="true" class="ml-4 waves-light" mdbWavesEffect data-dismiss="modal"
                   (click)="ranomafana.hide()">Close</button>
               </div>
@@ -64,7 +64,7 @@
           <div class="modal-content">
             <div class="modal-body mb-0 p-0">
               <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UguxxuTLEfM" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AoJXkHjKaEo" allowfullscreen></iframe>
               </div>
             </div>
             <div class="modal-footer justify-content-center flex-column flex-md-row">
@@ -79,6 +79,7 @@
         </div>
       </div>
     </div>
+    
     <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
 
       <div class="view overlay rounded z-depth-2 mb-4 waves-light" mdbWavesEffect>
@@ -93,26 +94,28 @@
       <h4 class="font-weight-bold mb-3"><strong>{{tsingy_bemaraha.title}} :</strong></h4>
       <p>by <a class="font-weight-bold">Billy Forester</a>, 13/07/2018</p>
       <p class="dark-grey-text">{{tsingy_bemaraha.description}}</p>
-      <a mdbBtn color="info" rounded="true" mdbWavesEffect (click)="tsingy.show()">Read more</a>
+      <a mdbBtn color="deep-orange" rounded="true" mdbWavesEffect (click)="tsingy.show()">Read more</a>
       <div mdbModal #tsingy="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-body mb-0 p-0">
               <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zHR1SLGwc-A" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UguxxuTLEfM" allowfullscreen></iframe>
               </div>
             </div>
             <div class="modal-footer justify-content-center flex-column flex-md-row">
               <span class="mr-4">Spread the word!</span>
               <h4 class="font-weight-bold">{{tsingy_bemaraha.title}}</h4>
               <p class="mb-0">{{tsingy_bemaraha.modal_desc}}</p>
-              <button type="button" mdbBtn color="info" outline="true" rounded="true" class="ml-4 waves-light" mdbWavesEffect data-dismiss="modal"
+
+              <button type="button" mdbBtn color="primary" outline="true" rounded="true" class="ml-4 waves-light" mdbWavesEffect data-dismiss="modal"
                 (click)="tsingy.hide()">Close</button>
             </div>
-
+          </div>
         </div>
       </div>
     </div>
+      
   </div>
 </section>
 </div>
